@@ -1,4 +1,4 @@
-# OCat Library
+# OS Cat Library
 <link rel="stylesheet" href="oscat/docs/styles.css">
 
 
