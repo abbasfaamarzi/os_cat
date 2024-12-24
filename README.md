@@ -22,5 +22,12 @@ Developed by Abbas Faramarzi Filabadi, this library extends functionalities thro
 
 ## Installation
 To install this library, you can use pip:
+
 ```sh
-pip install ocat
+pip install os_cat
+```
+
+To clone the repository directly from GitHub, you can use:
+```sh
+git clone https://github.com/abbasfaamarzi/os_cat.git
+```
