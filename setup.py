@@ -6,7 +6,7 @@ setup(
     description="A comprehensive library for managing directories and files.",
     author="Abbas Faramarzi Filabadi",
     author_email="abbasfaramarzi@068gmail.com",
-    url="https://github.com/abbasfaramarzi/ocat",  # آدرس مخزن گیت‌هاب یا وب‌سایت شما
+    url="https://github.com/abbasfaramarzi/os_cat",  # آدرس مخزن گیت‌هاب یا وب‌سایت شما
     packages=find_packages(),
     install_requires=[
         # وابستگی‌های بسته شما
