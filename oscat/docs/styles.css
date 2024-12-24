@@ -1,0 +1,38 @@
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 5px; /* فضای خالی سمت چپ (به اندازه آیکن) */
+    position: relative;
+}
+
+.github-button:hover {
+    background-color: #f0f0f0; /* تغییر رنگ پس‌زمینه هنگام هاور */
+}
+
+.github-button i {
+    margin-right: 5px;
+    position: absolute; /* موقعیت‌دهی */
+    left: 10px;
+    width: 40px; /* اندازه آیکن دوبل */
+    height: 40px; /* اندازه آیکن دوبل */
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center; /* مرکز کردن کلیه محتویات */
+    flex-direction: column;
+    align-items: center;
+}

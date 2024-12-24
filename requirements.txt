@@ -1,0 +1,19 @@
+os_cat/
+│
+├── oscat/
+│   ├──docs/
+│   │   ├── cat.jpg
+│   │   ├── GitHub-Logo.wine.svg
+│   │   └── styles.css
+│   ├── __init__.py
+│   ├── cat_os.py
+│   ├── cat_tree.py
+│   └── setting.py
+│
+├── LICENSE
+├── test.py
+├── README.md
+├── requirements.txt
+├── pypiirc.txt
+├── setup.py
+└── .idea/
