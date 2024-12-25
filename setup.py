@@ -7,15 +7,20 @@ setup(
     author="Abbas Faramarzi Filabadi",
     author_email="abbasfaramarzi@068gmail.com",
     url="https://github.com/abbasfaramarzi/os_cat",  # آدرس مخزن گیت‌هاب یا وب‌سایت شما
-    packages=find_packages(),
-    install_requires=[
-        # وابستگی‌های بسته شما
-        # مثال: 'requests', 'numpy',
-    ],
+    packages=find_packages(where='oscat'),
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",  # یا هر لایسنس دیگری که استفاده می‌کنید
-        "Operating System :: OS Independent",
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
-    python_requires='>=3.6',  # نسخه پایتون مورد نیاز
+    install_requires=[
+        'some_package',
+    ],
+    include_package_data=True,
+    package_dir={'': 'os_cat'},
 )
