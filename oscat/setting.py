@@ -20,7 +20,7 @@ class CatTreeProperties:
         '.git',
         'LICENSE',
         'setup.py',
-        'workflow.yml',
+        'workflows.yml',
         'requirements.txt',
         'README.md',
     }
