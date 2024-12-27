@@ -28,28 +28,45 @@ class CatFile(CatTree):
 
     def dc_space(self):
         title = "dc"
+        apps = "apps"
+        admin = "admin"
+        storage = "storage"
+        videos = "videos"
+        images = "images"
+        files = "files"
+        dc_space_paths = {}
         self.set_cat_space(cat_name= CatTreeProperties.dcat_space, title=title)
         self.make_dir()
         dc_dir = copy.copy(self.os_curser)
-        self.set_os_curser("apps")
+        self.set_os_curser(apps)
+        dc_space_paths[apps] = copy.copy(self.os_curser)
         self.make_dir()
-        self.set_os_curser("admin")
+        self.set_os_curser(admin )
+        dc_space_paths[admin] = copy.copy(self.os_curser)
         self.make_dir()
         self.set_space_files(title=title)
         self.new_branch(path=dc_dir, title="dc")
-        self.set_os_curser("storage")
+        self.set_os_curser(storage)
+        dc_space_paths[storage] = copy.copy(self.os_curser)
         st_dir = copy.copy(self.os_curser)
         self.make_dir()
-        self.set_os_curser("videos")
+        self.set_os_curser(videos)
+        dc_space_paths[videos] = copy.copy(self.os_curser)
         self.make_dir()
         self.new_branch(path=st_dir, title="st")
-        self.set_os_curser("images")
+        self.set_os_curser(images)
+        dc_space_paths[images] = copy.copy(self.os_curser)
         self.make_dir()
         self.new_branch(path=st_dir, title="st")
-        self.set_os_curser("files")
+        self.set_os_curser(files)
+        dc_space_paths[files] = copy.copy(self.os_curser)
         self.make_dir()
-
-        print(self.os_curser)
+        self.new_branch(path=dc_dir, title="dc")
+        self.set_os_curser("space_paths")
+        self.new_file()
+        self.write_file(
+            f"dc_space_paths = {dc_space_paths}"
+        )
 
     def cat_manager(self):
         """

@@ -7,7 +7,7 @@ setup(
     author="Abbas Faramarzi Filabadi",
     author_email="abbasfaramarzi@068gmail.com",
     url="https://github.com/abbasfaramarzi/os_cat",  # آدرس مخزن گیت‌هاب یا وب‌سایت شما
-    packages=find_packages(where='oscat'),
+    packages=find_packages(where='.'),
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
@@ -22,5 +22,5 @@ setup(
         'some_package',
     ],
     include_package_data=True,
-    package_dir={'': 'os_cat'},
+    package_dir={'': '.'},
 )
